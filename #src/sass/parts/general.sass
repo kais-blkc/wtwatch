@@ -1,0 +1,29 @@
+*, *::before, *::after
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+body
+  font-family: 'Roboto', sans-serif
+  background: rgba(0,0,0, .9)
+  --white: #F5F9FF
+  --dark: #333F51
+  --trans-2s: all .2s ease
+
+.container
+  margin: 0 auto
+  max-width: 1140px
+  // border: 1px solid orange
+  @media (max-width: 1160px)
+    max-width: 1000px
+  @media (max-width: 1060px)
+    max-width: 90%
+
+h1
+  color: #F7F8F9
+  font-size: 72px
+  font-weight: 700
+  line-height: 90px
+  text-align: center
+  @media (max-width: 767px)
+    font-size: 62px
