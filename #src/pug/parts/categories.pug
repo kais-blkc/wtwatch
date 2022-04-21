@@ -1,0 +1,25 @@
+mixin cl-i(img, title)
+  .swiper-slide
+    a(href='javascript:void(0)').cat-list__item.rounded-lg
+      .cat-list__item-img
+        img(src=img, alt="")
+      .cat-list__item-title.text-white=title
+
+section.categories 
+  .container 
+
+    h2.text-4xl.font-bold.text-slate-300.mb-7 Топ недели
+
+    .cat-list.cat-slider
+      .swiper-wrapper
+        +cl-i('https://resizer.mail.ru/p/235113f5-f92d-56ad-9027-3468ea2f2029/dpr:200/AQAC0TZIokgaxqRP3Zl_pTaqEa0bucMR3E21DvN6xasvGcPB9PykVZE-MIlvaUFdjDNlxEEwM1tBoHCFrYqyATDdyS4.jpg', 'Последний богатырь')
+        +cl-i('https://resizer.mail.ru/p/1713ed5f-5589-5af0-9972-817166779b8b/dpr:200/AAACwullFGgtawTparFpKhuwSyQ_MdTyqQvjqRPy4mT5LzMoMTn6Tq6Gu9iqOxzAPdzp06q5tIYOszHpebAIhb_nahI.jpg', 'Зверополис')
+        +cl-i('https://resizer.mail.ru/p/5317eeb3-100c-5ecf-81d7-81559f58eea7/dpr:200/AAAC5J4m-ozdMYb3sYpwsqkU9QIEqX7F3CLfx6b6B7pq6HVngoDbEqkOfx2ztKGBU3qdyiZ_KrUrjHbiaN9_f1d9jcc.jpg', 'Фантастические твари и где они обитают')
+        +cl-i('https://resizer.mail.ru/p/fabd8927-2a61-5874-bbd5-a671afe0006f/dpr:200/AAACCELYsdjfnzBWg7mHPeyITSTcDtsRqyjK7Lp74a0rMsWo6hge3u48ey5buh5Ns5KYhqcxeuWM4vS9v7BKH-0izro.jpg', 'Головоломка')
+        +cl-i('https://resizer.mail.ru/p/c305a384-a773-5e2e-b28c-8e59874338c8/dpr:179/AAACgDWpGKXarTYsI5oc1jqcKVqfUDwjTRZOdF6Yy6Avu_rauesuwjFQSQ37t2ehbabvEBGmcO5LW9IyLqWyTrPV6Ik.jpg', 'Гарри Поттер и философский камень')
+        +cl-i('https://resizer.mail.ru/p/7b1e5c47-7dd4-5398-aceb-a0b4e045c6aa/dpr:200/AAACPoU3oXoXnzRuch0bh6vq0vN05JMCEQoOXyQS6RLHq0ISVTEMTXwJtOzQM89lSl69wUv-jLlfMRhRyRreQjY2XoI.jpg', 'Рапунцель: Запутанная история')
+        +cl-i('https://resizer.mail.ru/p/dc4ec26d-159b-50cb-aa2a-6433e0bdbea1/dpr:200/AAACo3hoMAFG61Ypnsdi7GHFVeOo2Qw4bKv4BSZLdOYf8nZzQKFcgYLas2yvD09hjLYm24EYrY1xjJPCV9snGcbPzgY.jpg', 'Кунг-фу Панда 3')
+        +cl-i('https://resizer.mail.ru/p/9b45465d-9fe9-5b8e-9414-2ef5be24636d/dpr:200/AQAC5pTljiHt5YAsFuABeWutGsXCMI6uyuC9mPxm_gtpXVPvtS-wId2tIxTHJpPfGrVsejgxgEjEZZ93rDfvOvpO1Fk.jpg', 'Унесенные призраками')
+      
+      .swiper-button-next
+      .swiper-button-prev

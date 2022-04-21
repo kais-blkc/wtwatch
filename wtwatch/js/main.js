@@ -3,18 +3,41 @@ document.addEventListener('DOMContentLoaded', () => {
   // Sliders
   try {
     const heroSlider = new Swiper('.hero-slider', {
-			spaceBetween: 30,
+			spaceBetween: -30,
       loop: true,
       slidesPerView: 1,
       autoHeight: true,
       centeredSlides: true,
-			autoplay: {
-				delay: 3000,
-			},
+			// autoplay: {
+			// 	delay: 3000,
+			// },
       navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.hero-slider .swiper-button-next',
+        prevEl: '.hero-slider .swiper-button-prev',
       },
+    })
+
+    const catSlider = new Swiper('.cat-slider', {
+			spaceBetween: 30,
+      // loop: true,
+      slidesPerView: "auto",
+      // autoHeight: true,
+      // centeredSlides: true,
+			// autoplay: {
+			// 	delay: 3000,
+			// },
+      navigation: {
+        nextEl: '.cat-slider .swiper-button-next',
+        prevEl: '.cat-slider .swiper-button-prev',
+      },
+      breakpoints: {
+        320: {
+          centeredSlides: true
+        },
+        767: {
+          centeredSlides: false
+        }
+      }
     })
   } catch (err) {}
 

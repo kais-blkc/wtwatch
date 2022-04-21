@@ -6,12 +6,12 @@
     <title>Cordtec</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&amp;display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="css/style.min.css"/>
-    <link rel="stylesheet" href="css/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css"/><script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
     <section class="hero">
       <div class="container">
-        <h1>WTWatch</h1>
+        <h1 class="text-5xl text-center text-white font-bold mb-10">WTWatch</h1>
         <div class="hero-slider">
           <div class="swiper-wrapper">
                 <div class="swiper-slide">
@@ -42,6 +42,41 @@
                   </div>
                 </div>
           </div>
+        </div>
+      </div>
+    </section>
+    <section class="categories"> 
+      <div class="container"> 
+        <h2 class="text-4xl font-bold text-slate-300 mb-7">Топ недели</h2>
+        <div class="cat-list cat-slider">
+          <div class="swiper-wrapper">
+                <div class="swiper-slide"><a class="cat-list__item rounded-lg" href="javascript:void(0)">
+                    <div class="cat-list__item-img"><img src="https://resizer.mail.ru/p/235113f5-f92d-56ad-9027-3468ea2f2029/dpr:200/AQAC0TZIokgaxqRP3Zl_pTaqEa0bucMR3E21DvN6xasvGcPB9PykVZE-MIlvaUFdjDNlxEEwM1tBoHCFrYqyATDdyS4.jpg" alt=""/></div>
+                    <div class="cat-list__item-title text-white">Последний богатырь</div></a></div>
+                <div class="swiper-slide"><a class="cat-list__item rounded-lg" href="javascript:void(0)">
+                    <div class="cat-list__item-img"><img src="https://resizer.mail.ru/p/1713ed5f-5589-5af0-9972-817166779b8b/dpr:200/AAACwullFGgtawTparFpKhuwSyQ_MdTyqQvjqRPy4mT5LzMoMTn6Tq6Gu9iqOxzAPdzp06q5tIYOszHpebAIhb_nahI.jpg" alt=""/></div>
+                    <div class="cat-list__item-title text-white">Зверополис</div></a></div>
+                <div class="swiper-slide"><a class="cat-list__item rounded-lg" href="javascript:void(0)">
+                    <div class="cat-list__item-img"><img src="https://resizer.mail.ru/p/5317eeb3-100c-5ecf-81d7-81559f58eea7/dpr:200/AAAC5J4m-ozdMYb3sYpwsqkU9QIEqX7F3CLfx6b6B7pq6HVngoDbEqkOfx2ztKGBU3qdyiZ_KrUrjHbiaN9_f1d9jcc.jpg" alt=""/></div>
+                    <div class="cat-list__item-title text-white">Фантастические твари и где они обитают</div></a></div>
+                <div class="swiper-slide"><a class="cat-list__item rounded-lg" href="javascript:void(0)">
+                    <div class="cat-list__item-img"><img src="https://resizer.mail.ru/p/fabd8927-2a61-5874-bbd5-a671afe0006f/dpr:200/AAACCELYsdjfnzBWg7mHPeyITSTcDtsRqyjK7Lp74a0rMsWo6hge3u48ey5buh5Ns5KYhqcxeuWM4vS9v7BKH-0izro.jpg" alt=""/></div>
+                    <div class="cat-list__item-title text-white">Головоломка</div></a></div>
+                <div class="swiper-slide"><a class="cat-list__item rounded-lg" href="javascript:void(0)">
+                    <div class="cat-list__item-img"><img src="https://resizer.mail.ru/p/c305a384-a773-5e2e-b28c-8e59874338c8/dpr:179/AAACgDWpGKXarTYsI5oc1jqcKVqfUDwjTRZOdF6Yy6Avu_rauesuwjFQSQ37t2ehbabvEBGmcO5LW9IyLqWyTrPV6Ik.jpg" alt=""/></div>
+                    <div class="cat-list__item-title text-white">Гарри Поттер и философский камень</div></a></div>
+                <div class="swiper-slide"><a class="cat-list__item rounded-lg" href="javascript:void(0)">
+                    <div class="cat-list__item-img"><img src="https://resizer.mail.ru/p/7b1e5c47-7dd4-5398-aceb-a0b4e045c6aa/dpr:200/AAACPoU3oXoXnzRuch0bh6vq0vN05JMCEQoOXyQS6RLHq0ISVTEMTXwJtOzQM89lSl69wUv-jLlfMRhRyRreQjY2XoI.jpg" alt=""/></div>
+                    <div class="cat-list__item-title text-white">Рапунцель: Запутанная история</div></a></div>
+                <div class="swiper-slide"><a class="cat-list__item rounded-lg" href="javascript:void(0)">
+                    <div class="cat-list__item-img"><img src="https://resizer.mail.ru/p/dc4ec26d-159b-50cb-aa2a-6433e0bdbea1/dpr:200/AAACo3hoMAFG61Ypnsdi7GHFVeOo2Qw4bKv4BSZLdOYf8nZzQKFcgYLas2yvD09hjLYm24EYrY1xjJPCV9snGcbPzgY.jpg" alt=""/></div>
+                    <div class="cat-list__item-title text-white">Кунг-фу Панда 3</div></a></div>
+                <div class="swiper-slide"><a class="cat-list__item rounded-lg" href="javascript:void(0)">
+                    <div class="cat-list__item-img"><img src="https://resizer.mail.ru/p/9b45465d-9fe9-5b8e-9414-2ef5be24636d/dpr:200/AQAC5pTljiHt5YAsFuABeWutGsXCMI6uyuC9mPxm_gtpXVPvtS-wId2tIxTHJpPfGrVsejgxgEjEZZ93rDfvOvpO1Fk.jpg" alt=""/></div>
+                    <div class="cat-list__item-title text-white">Унесенные призраками</div></a></div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
         </div>
       </div>
     </section>

@@ -8,6 +8,7 @@ body
   background: rgba(0,0,0, .9)
   --white: #F5F9FF
   --dark: #333F51
+  --btn-gray: #bbc3cf
   --trans-2s: all .2s ease
 
 .container
@@ -19,11 +20,9 @@ body
   @media (max-width: 1060px)
     max-width: 90%
 
-h1
-  color: #F7F8F9
-  font-size: 72px
-  font-weight: 700
-  line-height: 90px
-  text-align: center
-  @media (max-width: 767px)
-    font-size: 62px
+section
+  overflow: hidden
+
+.swiper-button-next,
+.swiper-button-prev
+  color: var(--btn-gray) !important
