@@ -3,12 +3,35 @@
   padding: 0
   box-sizing: border-box
 
+html, body
+  scrollbar-color: #458245 #714826; /* «цвет ползунка» «цвет полосы скроллбара» */
+  scrollbar-width: auto | thin | none; /* толщина */
+
+/* полоса прокрутки (скроллбар) */
+html::-webkit-scrollbar, body::-webkit-scrollbar
+  width: 6px; /* ширина для вертикального скролла */
+  height: 6px; /* высота для горизонтального скролла */
+  background-color: var(--body-bg)
+
+/* ползунок скроллбара */
+html::-webkit-scrollbar-thumb, body::-webkit-scrollbar-thumb
+  background-color: rgba(255,255,255, .2)
+  border-radius: 4px
+
+html::-webkit-scrollbar-thumb:hover, body::-webkit-scrollbar-thumb-thumb:hover
+  background-color: rgba(255,255,255, .4)
+
 body
   font-family: 'Roboto', sans-serif
-  background: rgba(0,0,0, .9)
+  // background: rgba(0,0,0, .9)
+  // background: #151C29
+  --body-bg: #rgba(0,0,0, .9)
+  --body-bg: #151C29
+  background: var(--body-bg)
   --white: #F5F9FF
   --dark: #333F51
   --btn-gray: #bbc3cf
+  --btn-gray-8: #bbc3cfba
   --trans-2s: all .2s ease
 
 .container

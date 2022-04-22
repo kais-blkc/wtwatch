@@ -1,22 +1,48 @@
 section.categories
   margin-bottom: 50px
 
-  // .swiper-button-prev,
-  // .swiper-button-next
-  //   z-index: 5
+  .swiper-button-prev,
+  .swiper-button-next
+    width: 35px
+    height: 35px
+    border-radius: 50%
+    background: #bbc3cfba
+    box-shadow: 0 0 20px var(--btn-gray)
+    backdrop-filter: blur(2px)
+    transition: all .2s ease
+    // transform: scale(1)
+    &::after
+      font-size: 22px
+      color: var(--dark)
+      z-index: 5
+
+  .swiper-button-prev
+    &:hover
+      transform: translateX(-3px)
+    &::after
+      margin-left: -2px
+  .swiper-button-next
+    &:hover
+      transform: translateX(3px)
+    &::after
+      margin-right: -2px
+
   .swiper-button-disabled
     opacity: 0
 
   .cat-list__item,
   .swiper-slide
-    width: 220px
+    --width: 220px
+    width: var(--width)
+    height: calc(var(--width) / 0.7)
+    @media (max-width: 767px)
+      --width: 180px
 
   .cat-list
     position: relative
 
   .cat-list__item
     padding: 10px 15px
-    height: 300px
     display: flex
     align-items: flex-end
     overflow: hidden

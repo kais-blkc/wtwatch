@@ -10,6 +10,7 @@ section.hero
     &-active
       opacity: 1
       transform: scale(1.0)
+      z-index: 1
 
   .hero-slider
     margin-top: 50px
@@ -87,6 +88,8 @@ section.hero
         flex-grow: 1
         @media (max-width: 767px)
           font-size: 14px
+          max-height: 180px
+          overflow: hidden
 
       &-btn
         display: flex

@@ -19,10 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const catSlider = new Swiper('.cat-slider', {
 			spaceBetween: 30,
-      // loop: true,
       slidesPerView: "auto",
-      // autoHeight: true,
-      // centeredSlides: true,
 			// autoplay: {
 			// 	delay: 3000,
 			// },
@@ -30,14 +27,6 @@ document.addEventListener('DOMContentLoaded', () => {
         nextEl: '.cat-slider .swiper-button-next',
         prevEl: '.cat-slider .swiper-button-prev',
       },
-      breakpoints: {
-        320: {
-          centeredSlides: true
-        },
-        767: {
-          centeredSlides: false
-        }
-      }
     })
   } catch (err) {}
 
